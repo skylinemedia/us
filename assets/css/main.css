@@ -1,0 +1,59 @@
+body {
+  position: relative; /* For scrollyspy */
+  padding-top: 50px; /* Account for fixed navbar */
+  -webkit-font-smoothing: antialiased;
+}
+.page .masthead{background:#040915}
+.page .masthead a.navbar-brand{color:#fff;background-color:#f07530;font-size:80%}
+
+
+.skhead h1 small{font-size: 100%;color:#f07530}
+#service-page .skhead h1{margin:35px auto}
+
+.jobs .list-unstyled li{line-height:25px}
+
+
+/* 服务 */
+#service h4{color:#f07530;line-height:35px}
+#service ul{padding-left:15px}
+#service ul li{line-height:25px}
+#service ul ul{padding-left:30px}
+
+
+/* 客户&伙伴 */
+#partner>ul{list-style:none;padding:0;margin:0}
+#partner>ul>li{display:inline-block;margin-right:5px;margin-bottom:5px}
+#partner>ul>li a{display:inline-block;background:#fff url(/assets/image/c.jpg) left top no-repeat;height:70px;width:230px}
+#partner>ul>li.p00 a{background-position:-13px top}
+#partner>ul>li.p01 a{background-position:-272px top}
+#partner>ul>li.p02 a{background-position:-504px top}
+#partner>ul>li.p03 a{background-position:-753px top}
+#partner>ul>li.p04 a{background-position:-13px -90px}
+#partner>ul>li.p05 a{background-position:-272px -90px}
+#partner>ul>li.p06 a{background-position:-504px -90px}
+#partner>ul>li.p07 a{background-position:-753px -90px}
+#partner>ul>li.p08 a{background-position:-13px -170px}
+#partner>ul>li.p09 a{background-position:-272px -170px}
+#partner>ul>li.p10 a{background-position:-504px -170px}
+#partner>ul>li.p11 a{background-position:-753px -170px}
+
+
+.page footer{background:#040915;padding:80px 0;margin:0;color:#fff}
+.page footer .fnav > ul{list-style:none;margin:0;padding:0;display:inline-block;margin:5px auto}
+.page footer .fnav > ul li{float:left}
+.page footer .fnav > ul li a{padding:5px 2px}
+.page footer address{margin:15px 0;line-height:25px}
+.page footer h5{color:#fff;letter-spacing:0}
+.page footer a{color:#dbe4ea}
+.page footer a:hover{color:#fff}
+.page footer .lovingly span{font-family:entypo;line-height:.4;color:#ddd;display:inline-block;font-size:1.5rem}
+.page footer .lovingly p{color:#8f939b;font-weight:normal;text-transform:uppercase;font-size:.8rem;background:url(https://d17f28g3dsa4vh.cloudfront.net/img/kippt-logo-w.png) no-repeat;background-size:62px;padding:50px 0 0;margin:0;max-width:15rem}
+
+/* for desktop */
+@media (min-width: 768px) {
+    .skhead h1{text-align:center}
+    .page .masthead .navbar-nav>li>a{margin:15px auto}
+    .page .masthead a.navbar-brand{margin:15px auto;}
+    .page footer{margin-top:150px}
+}
+
