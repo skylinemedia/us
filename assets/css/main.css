@@ -23,7 +23,7 @@ body {
 /* 客户&伙伴 */
 #partner>ul{list-style:none;padding:0;margin:0}
 #partner>ul>li{display:inline-block;margin-right:5px;margin-bottom:5px}
-#partner>ul>li a{display:inline-block;background:#fff url(/assets/image/c.jpg) left top no-repeat;height:70px;width:230px}
+#partner>ul>li a{display:inline-block;background:#fff url(../image/c.jpg) left top no-repeat;height:70px;width:230px}
 #partner>ul>li.p00 a{background-position:-13px top}
 #partner>ul>li.p01 a{background-position:-272px top}
 #partner>ul>li.p02 a{background-position:-504px top}
