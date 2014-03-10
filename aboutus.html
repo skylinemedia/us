@@ -124,7 +124,7 @@
                   </ul>
               </div>
           </div>
-          <div class="row"><div class="col-md-12"> <div class="page-header"><h1>给我们留言</h1></div><div id="disqus_thread"></div></div></div>
+          <div class="row"><div class="col-md-12"> <div class="page-header"><h1>给我们留言</h1></div><div class="ds-thread"></div></div></div>
       </div>
 
 
@@ -189,16 +189,14 @@
       document.querySelector('head').appendChild(msViewportStyle)
     }
     /* * * CONFIGURATION VARIABLES: THIS CODE IS ONLY AN EXAMPLE * * */
-    var disqus_shortname = 'skychina'; // Required - Replace example with your forum shortname
-    var disqus_identifier = '/about';
-    var disqus_title = document.title;
-    var disqus_url = 'http://www.skylinemedia.cc/aboutus.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
+    var duoshuoQuery = {short_name:"skyline"};
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
     </script>
     </body>
