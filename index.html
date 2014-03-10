@@ -232,5 +232,16 @@
     </footer>
     <script src="assets/js/jquery.min.js?version=1.10.2"></script>
     <script src="assets/js/bootstrap.js"></script>
+    <script>
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+      var msViewportStyle = document.createElement('style')
+      msViewportStyle.appendChild(
+        document.createTextNode(
+          '@-ms-viewport{width:auto!important}'
+        )
+      )
+      document.querySelector('head').appendChild(msViewportStyle)
+    }
+    </script>
     </body>
 </html>
