@@ -7,7 +7,7 @@
     <meta name="description" content="SKYLINE增强现实创意广告营销">
     <meta name="author" content="skylinemedia.cc">
     <title>增强现实, 无限想像 | 天颂传媒 SKYLINE</title>
-
+    <link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/video-js.min195e1d.css" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -77,6 +77,22 @@
               <h1>增强现实，无限想像 <small>天颂传媒</small></h1>
           </div>
       </div>
+
+      <!-- experience -->
+      <div id="case-1" class="container">
+          <div class="page-header"><h1>视频观赏</h1></div>
+          <div class="row">
+              <div class="col-md-4">
+                <video id="video" class="video-js vjs-default-skin">
+                  <source src="http://video.store.qq.com/vweixinp.tc.qq.com/1007_389bc830d37a4ab2ace2960e5e2a8d39.f10.mp4?vkey=9DF27FC47399C109AB814B276E78D4E49034BF5978A1DE5A32F46D3968C2640855EA960A1E13D71B&sha=0" type="video/mp4" />
+                </video>
+                  <h4>当婚姻大事遇上AR：“请柬+” 希望用增强现实技术在你的请柬里做个婚礼预告片花</h4>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+          </div>
+      </div>
+      <!-- /experience -->
 
       <!-- experience -->
       <div id="experience" class="container">
@@ -163,6 +179,7 @@
     </footer>
     <script src="assets/js/jquery.min.js?version=1.10.2"></script>
     <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/lib/video195e1d.js"></script>
     <script>
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       var msViewportStyle = document.createElement('style')
@@ -173,6 +190,21 @@
       )
       document.querySelector('head').appendChild(msViewportStyle)
     }
+    videojs.options.flash.swf = 'http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/swf/video-js.swf';
+    var Player = videojs('video',{
+        controls: true,
+        autoplay: true,
+        preload: 'auto',
+        width: '100%',
+        height: '100%'
+    }).ready(function(){
+        this.play();
+        if( !document.createElement('video').canPlayType ){
+            this.src([
+                {type: 'video/x-flv', src: 'http://video.store.qq.com/vweixinp.tc.qq.com/1007_389bc830d37a4ab2ace2960e5e2a8d39.f10.mp4?vkey=9DF27FC47399C109AB814B276E78D4E49034BF5978A1DE5A32F46D3968C2640855EA960A1E13D71B&sha=0' }
+            ]);
+        }
+    });
     </script>
     </body>
 </html>
